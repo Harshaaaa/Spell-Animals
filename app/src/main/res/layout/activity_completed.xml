@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#191919"
+    android:layout_height="match_parent"
+    tools:context=".Completed">
+    <TextView
+        android:id="@+id/setscore"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:text="Your Score is:-100/100"
+        android:textColor="#fff9f9" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/gamevoer"
+        android:layout_height="400dp" />
+
+    <TextView
+        android:id="@+id/repalygame"
+        android:layout_width="203dp"
+        android:layout_height="52dp"
+        android:background="@drawable/radius"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:onClick="ReplyGame"
+        android:text="Play Again"
+        android:textColor="#414141"
+        android:textSize="30sp" />
+</LinearLayout>

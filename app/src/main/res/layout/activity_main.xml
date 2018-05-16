@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scoretextview"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Score :- 0"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/animal"
+        android:layout_width="match_parent"
+        android:layout_height="344dp"
+        android:src="@drawable/ic_action_thumbnail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:onClick="askSpeechText"
+    android:layout_height="45dp">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:layout_marginTop="10sp"
+        android:text="Tap to Say Answer"
+        android:textColor="#ececec"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="42dp"
+        android:onClick="askSpeechText"
+        android:layout_height="42dp"
+        android:background="@drawable/ico_mic" />
+</LinearLayout>
+</LinearLayout>
